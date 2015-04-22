@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/_gray"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/loginTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/_green" >
+
+        <ImageView
+            android:id="@+id/loginClose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingLeft="10dp"
+            android:src="@drawable/joker_icon_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="更换头像"
+            android:textColor="@color/_white"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/image_layout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/user_head_image1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="25dp"
+            android:src="@drawable/user_head_image1" />
+
+        <ImageView
+            android:id="@+id/user_head_image2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="25dp"
+            android:src="@drawable/user_head_image2" />
+
+        <ImageView
+            android:id="@+id/user_head_image3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="25dp"
+            android:src="@drawable/user_head_image3" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/image_layout2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image_layout1" >
+
+        <ImageView
+            android:id="@+id/user_head_image4"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="25dp"
+            android:src="@drawable/user_head_image4" />
+
+        <ImageView
+            android:id="@+id/user_head_image5"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="25dp"
+            android:src="@drawable/user_head_image5" />
+
+        <ImageView
+            android:id="@+id/user_head_image6"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="25dp"
+            android:src="@drawable/user_head_image6" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/image_layout3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image_layout2" >
+
+        <ImageView
+            android:id="@+id/user_head_image7"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="25dp"
+            android:src="@drawable/user_head_image7" />
+
+        <ImageView
+            android:id="@+id/user_head_image8"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="25dp"
+            android:src="@drawable/user_head_image8" />
+
+        <ImageView
+            android:id="@+id/user_head_image9"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="25dp"
+            android:src="@drawable/user_head_image9" />
+    </LinearLayout>
+
+</LinearLayout>

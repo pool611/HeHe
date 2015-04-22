@@ -1,0 +1,172 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/_gray"
+    android:orientation="vertical"
+    tools:context=".JokerLoginActivity" >
+
+    <!-- @author:李颜翎 -->
+    <!-- @说明：这是用户登陆页面 -->
+
+
+    <!-- 欢迎登陆文字，之后需要改成图片比较好 -->
+
+    <RelativeLayout
+        android:id="@+id/loginTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/_green" >
+
+        <ImageView
+            android:id="@+id/loginClose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingLeft="10dp"
+            android:src="@drawable/joker_icon_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="登陆页面"
+            android:textColor="@color/_white"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/login_to_regist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/loginClose"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:paddingLeft="10dp"
+            android:text="注册"
+            android:textColor="@color/_white"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/login_linear_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/_gray"
+        android:orientation="vertical"
+        android:paddingTop="40dp" >
+
+        <!--
+             <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:background="@color/_gray" >
+        </LinearLayout>
+        -->
+
+
+        <!-- @说明：输入登陆用户名 -->
+
+        <EditText
+            android:id="@id/id_login_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:background="@color/_white"
+            android:drawableLeft="@drawable/joker_icon_name"
+            android:hint="@string/msg_inputusername"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:singleLine="true" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:background="@color/_black" >
+        </LinearLayout>
+
+        <!-- @说明：输入登陆用户密码 -->
+
+        <EditText
+            android:id="@id/id_login_password"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:background="@color/_white"
+            android:drawableLeft="@drawable/joker_icon_key"
+            android:hint="@string/msg_inputpassword"
+            android:inputType="textPassword"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:singleLine="true" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:background="@color/_black" >
+        </LinearLayout>
+    </LinearLayout>
+    <!-- @说明：登陆按钮 -->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <CheckBox
+            android:id="@+id/autologin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:text="自动登录" />
+
+        <CheckBox
+            android:id="@+id/research_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:text="找回密码" />
+    </LinearLayout>
+
+    <Button
+        android:id="@id/id_action_login"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/mybutton_green"
+        android:text="@string/tag_main_login" />
+
+    <Button
+        android:id="@+id/research_password_button"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/mybutton_green"
+        android:text="找回密码"
+        android:visibility="gone" />
+
+</LinearLayout>

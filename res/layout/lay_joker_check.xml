@@ -1,0 +1,127 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/_gray"
+    tools:context=".JokerCheckActivity" >
+
+    <!-- @author:李颜翎 -->
+    <!-- @说明：这是管理员审核用户稿件的页面 -->
+    <!-- @问题：待审核内容是不是应该匿名 -->
+
+
+    <!-- 这里放置待审核的稿件内容 -->
+<RelativeLayout
+        android:id="@+id/loginTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/_green" >
+
+        <ImageView
+            android:id="@+id/checkClose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingLeft="10dp"
+            android:src="@drawable/joker_icon_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="笑话审核"
+            android:textColor="@color/_white"
+            android:textSize="18sp" />
+
+       
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/listview_item_background"
+        android:orientation="vertical"
+        android:paddingBottom="8dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="12dp" >
+        
+
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/Check_UserName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="匿名"
+                android:textColor="@color/_black"
+                android:visibility="gone"
+                android:textSize="15sp" />
+            
+            <ImageButton
+                android:id="@+id/Check_Radio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:background="@color/_white"
+                android:src="@drawable/radio" /> 
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/Check_MainText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:text="　　一日，将军潜入花木兰帐内欲行不归，强行要上木兰姐姐，就在这时，将军忽然指着花木兰大叫一声：你~你~你~竟然是个女的......"
+            android:textSize="16sp" />
+        <ImageView
+            android:id="@+id/Check_MainImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:src="@drawable/default_content_pic" />
+
+</LinearLayout>
+ 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <Button
+            android:id="@+id/Check_no"
+            android:layout_width="70dp"
+            android:layout_height="45dp"
+         	android:layout_marginBottom="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/Check_ok"
+            android:layout_marginRight="88dp"
+                android:background="@drawable/mybutton_green"
+            android:text="不通过" />
+
+        <Button
+            android:id="@+id/Check_ok"
+            android:layout_width="70dp"
+            android:layout_height="45dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_toLeftOf="@+id/Check_no"
+                android:background="@drawable/mybutton_green"
+            android:text="通过" />
+
+</RelativeLayout>
+
+</LinearLayout>

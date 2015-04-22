@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- @author:李颜翎 -->
+
+
+    <!-- 主页布局需要的各种id 9.23 -->
+    <item name="id_ll_jokes_newest" type="id">最新分类 布局id</item>
+    <item name="id_ll_jokes_best" type="id">最赞 布局id</item>
+    <item name="id_ll_jokes_word" type="id">纯文分类 布局id</item>
+    <item name="id_ll_jokes_audio" type="id">录音分类 布局id</item>
+    <item name="id_tv_jokes_newest" type="id">最新分类 文本id</item>
+    <item name="id_tv_jokes_best" type="id">最赞 文本id</item>
+    <item name="id_tv_jokes_word" type="id">纯文分类 文本id</item>
+    <item name="id_tv_jokes_audio" type="id">录音分类 文本id</item>
+    <item name="id_iv_tabline" type="id">滑动指示器</item>
+    <item name="id_iv_main_more" type="id">主页更多选项</item>
+    <item name="id_iv_main_contribute" type="id">主页投稿选项</item>
+    <item name="id_iv_main_check" type="id">主页审查选项</item>
+    <item name="id_iv_main_radiomore" type="id">音频播放选项</item>
+
+    <!-- 标题栏选项 -->
+    <item name="id_regist" type="id">id注册</item>
+    <item name="id_login" type="id">id登陆</item>
+    <item name="id_login_username" type="id">用户名</item>
+    <item name="id_login_password" type="id">密码</item>
+    <item name="id_regist_username" type="id">用户名</item>
+    <item name="id_regist_password" type="id">密码</item>
+    <item name="id_check_yes" type="id">审查通过</item>
+    <item name="id_check_no" type="id">审查不通过</item>
+    <item name="id_action_regist" type="id">id注册</item>
+    <item name="id_action_login" type="id">id登陆</item>
+    <!-- popwindow内的按钮id -->
+    <item name="id_main_pop_regist" type="id">pop id 注册</item>
+    <item name="id_main_pop_login" type="id">pop id 登陆</item>
+    <item name="id_main_pop_personalcenter" type="id">pop id 用户中心</item>
+    <item name="id_main_pop_authority" type="id">pop id 权限管理</item>
+    <item name="id_main_pop_statistics" type="id">pop id 统计</item>
+    <item name="id_main_pop_pushnews" type="id">pop id 消息推送</item>
+    <item name="id_main_pop_logout" type="id">pop id 注销</item>
+    <item name="id_main_pop_exit" type="id">pop id 退出</item>
+
+    <!-- @author:李颜翎 -->
+    <!-- @说明：笑话显示列表使用的id -->
+    <item name="id_jokes_joke_list" type="id">笑话列表ListView</item>
+    <item name="id_jokes_joke_single" type="id">单个笑话容器</item>
+    <item name="id_jokes_joke_user_img" type="id">发布用户头像</item>
+    <item name="id_jokes_joke_user_id" type="id">发布用户id</item>
+    <item name="id_jokes_joke_user_name" type="id">发布用户名</item>
+    <item name="id_jokes_joke_id" type="id">笑话id</item>
+    <item name="id_jokes_joke_content_posttime" type="id">笑话发布时间</item>
+    <item name="id_jokes_joke_content_text" type="id">内容文本</item>
+    <item name="id_jokes_joke_content_img" type="id">内容图片</item>
+    <item name="id_jokes_joke_content_audio" type="id">内容音频</item>
+    <item name="id_jokes_joke_count_praise" type="id">点赞个数</item>
+    <item name="id_jokes_joke_count_comment" type="id">评论个数</item>
+    <item name="id_jokes_joke_count_share" type="id">分享个数</item>
+    <item name="id_jokes_joke_count_add_praise" type="id">点赞一下</item>
+    <item name="id_jokes_joke_count_add_comment" type="id">评论一下</item>
+    <item name="id_jokes_joke_count_add_share" type="id">分享一下</item>
+
+    <!-- @权限管理 -->
+    <item name="id_authority_grant" type="id">授予权限</item>
+    <item name="id_authority_revoke" type="id">回收权限</item>
+
+    <!-- 笑话列表 头部刷新 -->
+    <item name="id_jokes_header_lay" type="id">头部刷新的layout布局id</item>
+    <item name="id_jokes_header_tip" type="id">头部刷新的提示文本id</item>
+    <item name="id_jokes_header_lastupdatetime" type="id">头部刷新的提示上一次更新时间</item>
+    <item name="id_jokes_header_arrow" type="id">头部刷新的提示箭头</item>
+    <item name="id_jokes_header_progress" type="id">头部刷新的圆形进度条</item>
+
+    <!-- 笑话列表 底部加载 -->
+    <item name="id_jokes_footer_lay" type="id">底部加载布局id</item>
+
+    <!-- 笑话item -->
+    <item name="Item_UserName" type="id"></item>
+    <item name="Item_Radio" type="id"></item>
+    <item name="Item_MainText" type="id"></item>
+    <item name="Item_MainImg" type="id"></item>
+    <item name="Item_Up" type="id"></item>
+    <item name="Item_Up_img" type="id"></item>
+    <item name="Item_Up_text" type="id"></item>
+    <item name="Item_Share" type="id"></item>
+    <item name="Item_Share_img" type="id"></item>
+    <item name="Item_Comments" type="id"></item>
+    <item name="Item_pinlun" type="id"></item>
+
+    <!-- 后台统计 Button id -->
+    <item name="id_statistics_user_regist" type="id">用户注册情况统计</item>
+    <item name="id_statistics_joke_post" type="id">笑话发布情况</item>
+    <item name="id_statistics_user_proportion" type="id">用户比例统计</item>
+    <item name="id_statistics_joke_check_proportion" type="id">笑话审核比例统计</item>
+    <!-- 后台统计的图表视图 -->
+    <item name="lay_statistics_chart_user_regist" type="id">用户注册情况统计的图表layout</item>
+    <item name="lay_statistics_chart_user_proportion" type="id">用户比例统计的图表layout</item>
+    <item name="lay_statistics_chart_joke_post" type="id">笑话发布比例统计的图表layout</item>
+
+    <!-- 统计视图需要的内容id和button id -->
+    <item name="id_statistics_user_regist_last" type="id">用户注册统计 查看上一年的统计结果</item>
+    <item name="id_statistics_user_regist_next" type="id">用户注册统计 查看下一年的统计结果</item>
+    <item name="id_statistics_user_regist_year" type="id">用户注册统计 查看的某一年的信息中的某一年</item>
+    <item name="id_statistics_joke_post_last" type="id">笑话发布统计 查看的上一年的信息中的某一年</item>
+    <item name="id_statistics_joke_post_next" type="id">笑话发布统计 查看的下一年的信息中的某一年</item>
+    <item name="id_statistics_joke_post_year" type="id">笑话发布统计 查看的某一年的信息中的某一年</item>
+
+    <!-- @author:王亚伟 -->
+    <!-- @说明：播放设置列表使用的id -->
+    <item name="id_main_pop_role" type="id">发音人</item>
+    <item name="id_main_pop_speed" type="id">语速</item>
+    <item name="id_main_pop_audiosize" type="id">语音大小</item>
+
+</resources>

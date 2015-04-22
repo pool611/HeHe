@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@color/_gray"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/loginTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/_green" >
+
+        <ImageView
+            android:id="@+id/loginClose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingLeft="10dp"
+            android:src="@drawable/joker_icon_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="笑话详情"
+            android:textColor="@color/_white"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dp"
+        android:layout_weight="0.97" >
+
+        <ScrollView
+            android:id="@+id/scrollView1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scrollbars="none" >
+
+            <!-- 将笑话内容和用户评论都放在一个ScrollView中 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="1dp"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:paddingTop="1dp" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/listview_item_background"
+                    android:orientation="vertical"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp"
+                    android:paddingTop="12dp" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:id="@+id/userimage"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/user_head_image5" />
+
+                        <TextView
+                            android:id="@+id/Detail_UserName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:text="UserName"
+                            android:textColor="@color/_black"
+                            android:textSize="18sp" />
+
+                        <ImageView
+                            android:id="@+id/Detail_Radio"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:background="@color/_white"
+                            android:src="@drawable/radio" />
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="282dp"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:id="@+id/DetailText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="15dp"
+                            android:layout_marginTop="10dp"
+                            android:text="笑话加载中..."
+                            android:textSize="16sp" />
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:id="@+id/DetailImg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:src="@drawable/default_content_pic" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <LinearLayout
+                            android:id="@+id/Detail_Up"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal" >
+
+                            <ImageView
+                                android:id="@+id/Detail_Up_img"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="3dp"
+                                android:paddingRight="5dp"
+                                android:src="@drawable/icon_img_like_disable" />
+
+                            <TextView
+                                android:id="@+id/Detail_Up_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingRight="5dp"
+                                android:text="0"
+                                android:textColor="@color/_lightgray"
+                                android:textSize="15sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="20dp"
+                            android:gravity="right"
+                            android:orientation="horizontal" >
+
+                            <LinearLayout
+                                android:id="@id/Item_Comments"
+                                android:layout_width="45dp"
+                                android:layout_height="45dp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="3dp"
+                                android:background="@drawable/hna"
+                                android:gravity="center"
+                                android:orientation="horizontal"
+                                android:paddingLeft="5dp"
+                                android:paddingRight="5dp" >
+
+                                <TextView
+                                    android:id="@+id/Item_Comments_text"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="3dp"
+                                    android:paddingRight="3dp"
+                                    android:text="音"
+                                    android:textColor="#818181"
+                                    android:textSize="18sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/Detail_Share"
+                                android:layout_width="wrap_content"
+                                android:layout_height="45dp"
+                                android:layout_gravity="right"
+                                android:background="@drawable/button_vote_enable"
+                                android:gravity="center"
+                                android:orientation="horizontal" >
+
+                                <ImageView
+                                    android:id="@+id/Detail_Share_img"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:contentDescription="分享"
+                                    android:scaleType="fitXY"
+                                    android:src="@drawable/joker_icon_share1" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- 显示用户评论的内容 -->
+
+                <LinearLayout
+                    android:id="@+id/SignGroup"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="3dp" >
+
+                    <!-- 动态加载按钮 -->
+
+                    <TextView
+                        android:id="@+id/Detail_NoCommentsText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="该笑话暂无评论"
+                        android:textColor="@color/_lightgray"
+                        android:textSize="16sp"
+                        android:visibility="gone" />
+
+                    <LinearLayout
+                        android:id="@+id/Detail__progressBar1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:visibility="visible" >
+
+                        <ProgressBar
+                            style="@style/myProgressBarStyleLarge"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:visibility="visible" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="正在加载中..."
+                            android:textColor="@color/_lightgray"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <!-- 动态加载评论内容 -->
+
+                    <com.joker.myview.JokerDetailsListView
+                        android:id="@+id/Detail_List1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:divider="@null"
+                        android:listSelector="@color/_lightgray"
+                        android:paddingTop="1dp"
+                        android:scrollbars="none"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.03"
+        android:orientation="horizontal"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp" >
+
+        <!-- 评论内容 -->
+
+        <EditText
+            android:id="@+id/write_CommentText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="10" />
+
+        <!-- 发表评论按钮 -->
+
+        <Button
+            android:id="@+id/comment_Btn"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/mybutton_green"
+            android:text="发表" />
+    </LinearLayout>
+
+</LinearLayout>

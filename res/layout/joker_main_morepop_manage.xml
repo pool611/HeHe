@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="right"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/main_popwindow_ll_padding_top_size" >
+
+    <!-- @author：李颜翎 -->
+    <!-- @说明：在主页面上点击“更多”，弹出的菜单，即为如下 -->
+    <!-- 所有用户可选功能全部列出，请在程序中根据用户身份，对用户不可用的操作进行隐藏 -->
+
+
+    <!-- 注册 图片和文字 -->
+
+    <Button
+        android:id="@id/id_main_pop_regist"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/_darkgreen"
+        android:drawableLeft="@drawable/joker_icon_regist"
+        android:paddingLeft="20dp"
+        android:paddingRight="25dp"
+        android:text="@string/tag_main_regist"
+        android:textColor="@color/_white"
+        android:textSize="@dimen/main_popwindow_text_size" />
+
+    <!-- 登陆 图片和文字 -->
+
+    <Button
+        android:id="@id/id_main_pop_login"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/_darkgreen"
+        android:drawableLeft="@drawable/joker_icon_login2"
+        android:paddingLeft="20dp"
+        android:paddingRight="25dp"
+        android:text="@string/tag_main_login"
+        android:textColor="@color/_white"
+        android:textSize="@dimen/main_popwindow_text_size" />
+
+    <!-- 个人中心 图片和文字 -->
+
+    <Button
+        android:id="@id/id_main_pop_personalcenter"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/_darkgreen"
+        android:drawableLeft="@drawable/joker_icon_personalcenter1"
+        android:paddingLeft="20dp"
+        android:paddingRight="25dp"
+        android:text="@string/tag_main_personalcenter"
+        android:textColor="@color/_white"
+        android:textSize="@dimen/main_popwindow_text_size" />
+
+    <!-- 权限管理  图片和文字 -->
+
+    <Button
+        android:id="@id/id_main_pop_authority"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/_darkgreen"
+        android:drawableLeft="@drawable/joker_icon_authority"
+        android:paddingLeft="20dp"
+        android:paddingRight="25dp"
+        android:text="@string/tag_main_authority"
+        android:textColor="@color/_white"
+        android:textSize="@dimen/main_popwindow_text_size" />
+
+    <!-- 后台统计  图片和文字 -->
+
+    <Button
+        android:id="@id/id_main_pop_statistics"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/_darkgreen"
+        android:drawableLeft="@drawable/joker_icon_statistics3"
+        android:paddingLeft="20dp"
+        android:paddingRight="25dp"
+        android:text="@string/tag_main_statistics"
+        android:textColor="@color/_white"
+        android:textSize="@dimen/main_popwindow_text_size" />
+
+    <!-- 消息推送 -->
+
+    <Button
+        android:id="@id/id_main_pop_pushnews"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/_darkgreen"
+        android:drawableLeft="@drawable/joker_icon_message4"
+        android:paddingLeft="20dp"
+        android:paddingRight="25dp"
+        android:text="@string/tag_main_pushnews"
+        android:textColor="@color/_white"
+        android:textSize="@dimen/main_popwindow_text_size" />
+
+    <!-- 注销登陆  图片和文字 -->
+
+    <Button
+        android:id="@id/id_main_pop_logout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/_darkgreen"
+        android:drawableLeft="@drawable/joker_icon_logout"
+        android:paddingLeft="20dp"
+        android:paddingRight="25dp"
+        android:text="@string/tag_main_logout"
+        android:textColor="@color/_white"
+        android:textSize="@dimen/main_popwindow_text_size" />
+
+    <!-- 退出 -->
+
+    <Button
+        android:id="@id/id_main_pop_exit"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/_darkgreen"
+        android:drawableLeft="@drawable/joker_icon_exit"
+        android:paddingLeft="20dp"
+        android:paddingRight="25dp"
+        android:text="@string/tag_main_exit"
+        android:textColor="@color/_white"
+        android:textSize="@dimen/main_popwindow_text_size" />
+
+</LinearLayout>

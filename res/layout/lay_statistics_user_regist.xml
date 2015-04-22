@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/_black"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/loginTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/_black" >
+
+        <ImageView
+            android:id="@+id/loginClose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingLeft="10dp"
+            android:src="@drawable/joker_icon_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="用户注册统计"
+            android:textColor="@color/_white"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/_black"
+        android:baselineAligned="false"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/_black"
+            android:gravity="left"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@id/id_statistics_user_regist_last"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/mybutton_black"
+                android:gravity="center"
+                android:text="@string/str_statistics_lastyear"
+                android:textColor="@color/_white" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@id/id_statistics_user_regist_year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/_black"
+            android:gravity="center"
+            android:text="@string/str_statistics_current_year"
+            android:textColor="@color/_white"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/_black"
+            android:gravity="right"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@id/id_statistics_user_regist_next"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/mybutton_black"
+                android:gravity="center"
+                android:text="@string/str_statistics_nextyear"
+                android:textColor="@color/_white" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@id/lay_statistics_chart_user_regist"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:background="@color/_black"
+        android:orientation="horizontal" />
+
+</LinearLayout>

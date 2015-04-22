@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context=".JokerAuthorityActivity" >
+
+    <Button
+        android:id="@+id/manger"
+        android:layout_width="60dp"
+        android:layout_height="45dp"
+        android:layout_toLeftOf="@+id/manger1"
+        android:text="@string/manger"
+        android:background="@drawable/mybutton_green"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/manger1"
+        android:layout_width="60dp"
+        android:layout_height="45dp"
+        android:layout_alignBottom="@+id/manger"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/mybutton_green"
+        android:text="@string/manger1"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/userInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:gravity="center"
+        android:text="用户信息" />
+
+</RelativeLayout>

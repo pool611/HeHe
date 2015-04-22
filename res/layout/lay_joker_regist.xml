@@ -1,0 +1,142 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/_gray"
+    android:orientation="vertical"
+    tools:context=".JokerRegistActivity" >
+
+    <!-- @author:李颜翎 -->
+    <!-- @说明：这是用户注册页面 -->
+
+    <RelativeLayout
+        android:id="@+id/registTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/_green" >
+
+        <ImageView
+            android:id="@+id/registClose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingLeft="10dp"
+            android:src="@drawable/joker_icon_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="注册页面"
+            android:textColor="@color/_white"
+            android:textSize="18sp" />
+
+      <!--   <RelativeLayout
+            android:id="@+id/regist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@color/_black"
+            android:paddingRight="10dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="登录"
+                android:textColor="@color/_white"
+                android:textSize="15sp" />
+        </RelativeLayout> -->
+    </RelativeLayout>
+
+    <!-- 欢迎注册文字，之后需要改成图片比较好 -->
+
+
+
+    <LinearLayout
+        android:id="@+id/regist_linear_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:paddingTop="40dp"
+        android:background="@color/_gray"
+        android:orientation="vertical" >
+
+      <!--   <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:background="@color/_gray" >
+        </LinearLayout> -->
+        <!-- @说明：输入注册用户名 -->
+
+        <EditText
+            android:id="@id/id_regist_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:background="@color/_white"
+                        android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:drawableLeft="@drawable/joker_icon_name"
+            android:hint="@string/msg_inputusername"
+            android:singleLine="true" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:background="@color/_black" >
+        </LinearLayout>
+        <!-- @说明：输入注册用户密码 -->
+
+        <EditText
+            android:id="@id/id_regist_password"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:background="@color/_white"
+                        android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:drawableLeft="@drawable/joker_icon_key"
+            android:hint="@string/msg_inputpassword"
+            android:inputType="textPassword"
+            android:singleLine="true" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:background="@color/_black" >
+        </LinearLayout>
+    </LinearLayout>
+    <!-- @说明：登陆按钮 -->
+
+    <Button
+        android:id="@id/id_action_regist"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/mybutton_green"
+        android:text="@string/tag_main_regist" />
+
+</LinearLayout>
